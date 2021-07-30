@@ -16,12 +16,19 @@ Load2/Light2/Fan 1 is connected to PINB1
 
 Component Needed:
 1)Atmega328p Microcontroller:150Taka(https://bdspeedytech.com/index.php?route=product/product&product_id=445)
+
 2)HC-05 Bluetooth Module:240   Taka(https://bdspeedytech.com/index.php?route=product/product&product_id=1384)
+
 3)IR  Sensor:50Taka(https://bdspeedytech.com/index.php?route=product/product&product_id=238)
+
 4)Relay Module: 220Taka(https://bdspeedytech.com/index.php?route=product/product&path=25&product_id=248)
+
 5)Light Bulb/Fan etc as your wish
+
 6) Android Phone
+
 7)Three resistor of Identical Value
+
 Program Algorithm:
 •	If there is a data received by microcontroller UART then a receive interrupt is triggered. In interrupt routine it is checked what equipment to on or off. Here 
 ‘a’=light 1 on
@@ -34,6 +41,10 @@ Program Algorithm:
 
 Relay Module:
 There are three output connector for each relay. Middle should be used all the time. The other twos are normally open and normally closed with middle connector.
-If Jumper of the relay is connected then it takes power from microcontroller board. If the jumper is disconnected then relay is isolated from microcontroller and separate 5v supply need to given.
+
+If Jumper of the relay is connected then it takes power from microcontroller board. If the jumper is disconnected then relay is isolated from microcontroller and separate 5v
+
+supply need to given.
+
 Relay is low triggered. That means when input is 0 relay is ON and when input is 5V relay is off.
 
